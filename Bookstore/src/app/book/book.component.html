@@ -1,0 +1,5 @@
+<ul class="heroes">
+  <li *ngFor="let book of books" (click)="onSelect(book)">
+    <span >{{book.id}}</span> {{book.name}}
+  </li>
+</ul>

@@ -1,0 +1,21 @@
+<h3>Name</h3>
+{{book.name}}
+<h3>Author</h3>
+{{author.name}}
+<h3>ID</h3>
+{{book.id}}
+<div>
+    <label>book:
+      <input [(ngModel)]="book.name" placeholder="book">
+    </label>
+  </div>
+  <div>
+    <label>author:
+      <input [(ngModel)]="author.name" placeholder="author">
+    </label>
+  </div>
+  <div>
+    <label>id:
+      <input [(ngModel)]="book.id" placeholder="id">
+    </label>
+  </div>
