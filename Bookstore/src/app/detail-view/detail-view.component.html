@@ -1,17 +1,13 @@
-<h3>Name</h3>
-{{book.name}}
-<h3>Author</h3>
-{{author.name}}
-<h3>ID</h3>
-{{book.id}}
-<div>
+<div *ngIf="author">
+  <h3>Name</h3>
+  <p>{{book.name}}</p>
+  <h3>Author</h3>
+  <p (click)="loadAuthor()">{{author.name}}</p>
+  <h3>ID</h3>
+  {{book.id}}
+  <div>
     <label>book:
       <input [(ngModel)]="book.name" placeholder="book">
-    </label>
-  </div>
-  <div>
-    <label>author:
-      <input [(ngModel)]="author.name" placeholder="author">
     </label>
   </div>
   <div>
@@ -19,3 +15,5 @@
       <input [(ngModel)]="book.id" placeholder="id">
     </label>
   </div>
+  <button (click)="updateBook()">update details</button>
+</div>

@@ -1,0 +1,15 @@
+<div *ngIf="author">
+<h3>Name</h3>
+{{author.name}}
+<h3>Bio</h3>
+{{author.bio}}
+<label>book:
+  <input [(ngModel)]="author.name" placeholder="name">
+</label>
+<div>
+  <label>bio:
+    <input [(ngModel)]="author.bio" placeholder="bio">
+  </label>
+</div>
+<button (click)="updateAuthor()">update details</button>
+</div>
